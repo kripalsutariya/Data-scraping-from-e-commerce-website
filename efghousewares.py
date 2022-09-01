@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[27]:
-
-
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
@@ -213,24 +207,3 @@ data = {
     }
 df = pd.DataFrame(data)
 df.to_excel("efgwarehouse outputs.xlsx", index=False)
-
-
-# In[24]:
-
-
-df
-
-
-# In[22]:
-
-
-print(len(l_barcode))
-print(len(l_image))
-print(len(l_name))
-print(len(l_price))
-print(len(l_product_code))
-print(len(l_quantity))
-print(len(l_quantity_price))
-print(len(l_sku))
-print(len(l_supp))
-
